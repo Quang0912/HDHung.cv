@@ -14,6 +14,21 @@
     <meta name="keywords" content="Ho Duc Hung,RPh" />
     <meta name="description" content="Biography of Ho Duc Hung Pharmacist" />
     <title>About me</title>
+    <p>This page is password protected.</p>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var password;
+      var pass1 = "hoduchung";
+
+      password = prompt('Please enter the password to view this page!');
+
+      if (password !== pass1) {
+        alert('Incorrect password');
+        window.location.href = "https://www.google.com.vn/?hl=vi"; // Chuyển hướng đến trang Google nếu mật khẩu không đúng
+      }
+    });
+  </script>
     <link
       href="images/Favicon_CP.png"
       rel="shortcut icon"
